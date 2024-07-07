@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quarkus Working Groups</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+
+    <style>
+        .last-update-date {
+            font-size: 0.8em;
+        }
+
+        .key {
+            font-weight: bold;
+            font-size: 0.8em;
+            margin-right: 3px;
+        }
+
+        .short-description {
+            font-size: small;
+        }
+
+        header {
+            padding-top: 4rem;
+            padding-bottom: 3rem;
+            color: rgb(255, 255, 255);
+            text-align: left;
+            font-size: 28px;
+            opacity: 1;
+            margin: 0;
+            background-color: rgb(13, 28, 44);
+            display: block;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            line-height: 3.75rem;
+            font-weight: 700;
+            margin: 2.5rem 0 1.5rem;
+            width: 1400px;
+            padding-left: 208px;
+            padding-right: 208px;
+        }
+
+        header .lead {
+            font-size: 24px;
+            line-height: 1.8rem;
+            font-weight: 400;
+            margin: 2.5rem 0 0;
+            width: 1400px;
+            padding-left: 208px;
+            padding-right: 208px;
+        }
+
+        main {
+            margin-top: 85px;
+        }
+
+        .card {
+            font-family: "Open Sans", sans-serif;
+            font-size: 16px;
+        }
+
+        .modal {
+            font-family: "Open Sans", sans-serif;
+            font-size: 16px;
+        }
+
+        .card-body, .modal-body {
+            font-size: 14px;
+        }
+
+        .btn-primary {
+            background-color: rgb(70, 149, 235);
+            border-radius: 10px;
+            color: rgb(255, 255, 255);
+        }
+
+        .btn-secondary {
+            background-color: rgb(70, 149, 235);
+            border-radius: 10px;
+            color: rgb(255, 255, 255);
+        }
+
+        .badge {
+            font-family: "Open Sans", sans-serif;
+            font-weight: lighter;
+        }
+    </style>
+</head>
+<body>
+<header class="container-flex">
+    <h1>Quarkus Working Groups</h1>
+
+    <p class="lead">This page provides an overview of the currently running <em>working groups</em>.
+        Each working group focuses on a specific subject.
+        On this page, you can both discover working groups, see what's going on, and join one.</p>
+</header>
+<main class="container-fluid ms-1 me-1">
+    <div class="row row-cols-1 row-cols-md-2 g-4 text-center">
+
+            <div class="col">
+                <div class="card wg-card  ms-1 me-1 mb-1 mt-1">
+                    <div class="card-header text-start">
+                        <span>Enhanced TLS support</span>
+                        <span class="badge float-end text-bg-success">on track</span>
+                    </div>
+                    <div class="card-body text-start">
+                        <p class="card-text"><span class="key">Description:</span><span class="short-description">Track the progress around the new TLS configuration centralization and new features (like Let&#39;s Encrypt, Cert-Manager, and local experience...)</span></p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-sm btn-secondary me-1 mb-1 float-start" data-bs-toggle="modal" data-bs-target="#modal-PVT_kwDOAtbo_84Ai3FA">More info</a>
+                        <span class="float-center text-center last-update-date">Last activity: 06/07/2024</span>
+                        <a href="https://github.com/orgs/quarkusio/projects/24" class="btn btn-sm btn-primary me-1 mb-1 float-end">Board</a>
+                    </div>
+
+                    <!-- The modal given more details -->
+                    <div class="modal fade" id="modal-PVT_kwDOAtbo_84Ai3FA" tabindex="-1" aria-labelledby="modal-PVT_kwDOAtbo_84Ai3FA-label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="modal-PVT_kwDOAtbo_84Ai3FA-label">Enhanced TLS support</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-start">
+                                    <p><p>TLS is becoming increasingly common and recommended. However, for years, each Quarkus extension has been doing its own TLS configuration and management. As a result, the configuration looks different everywhere, and many extensions have incomplete configurations.</p>
+<p>Based on the newly integrated TLS registry, we now have a single place to configure TLS. At runtime, it provides methods to configure Vert.x and &quot;pure&quot; Java clients (using an <code>SSLContext</code>).</p>
+<p>The goal of this focus group is to continue integrating the TLS registry and improve Quarkus integration with certificate providers (Let's Encrypt, Cert-Manager). In addition, we would like to provide a frictionless local experience around TLS (i.e., without the infamous untrusted certificate screen).</p>
+<p><em>Point of contact:</em> @cescoffier (@<strong>Clement Escoffier</strong> on Zulip)</p>
+</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="card wg-card  ms-1 me-1 mb-1 mt-1">
+                    <div class="card-header text-start">
+                        <span>Roq :: Quarkus SSG</span>
+                        <span class="badge float-end text-bg-secondary">inactive</span>
+                    </div>
+                    <div class="card-body text-start">
+                        <p class="card-text"><span class="key">Description:</span><span class="short-description">Allow Static Site Generation with Quarkus.</span></p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-sm btn-secondary me-1 mb-1 float-start" data-bs-toggle="modal" data-bs-target="#modal-PVT_kwDOBB_IY84Ajg1K">More info</a>
+                        <span class="float-center text-center last-update-date">Last activity: 04/07/2024</span>
+                        <a href="https://github.com/orgs/quarkiverse/projects/6" class="btn btn-sm btn-primary me-1 mb-1 float-end">Board</a>
+                    </div>
+
+                    <!-- The modal given more details -->
+                    <div class="modal fade" id="modal-PVT_kwDOBB_IY84Ajg1K" tabindex="-1" aria-labelledby="modal-PVT_kwDOBB_IY84Ajg1K-label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="modal-PVT_kwDOBB_IY84Ajg1K-label">Roq :: Quarkus SSG</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-start">
+                                    <p><p>New initiative to allow Static Site Generation with Quarkus.</p>
+<p>Quarkus already provides most of the pieces to create great web applications (https://quarkus.io/guides/web).</p>
+<p>I recently added https://github.com/quarkiverse/quarkus-roq. It will allow generating a static website out of any Quarkus application (it starts the app, fetch all the configured pages and assets, generate a static website and stop), it already works but it is still very alpha.</p>
+<p>What's missing? we now need to incrementally add the toolkit to ease the process of creating static content through Quarkus:</p>
+<ul>
+<li>Static Data</li>
+<li>Markdown/Asciidoc and frontmatter</li>
+<li>SEO</li>
+<li>Image processing</li>
+<li>Easy to configure routing</li>
+</ul>
+<p>This will allow to develop the content using Quarkus dev-mode, and then generate for Github Pages or similar when it's ready.</p>
+<p>Bonus, everything added will benefit any &quot;non-static&quot; Quarkus app and any Static Quarkus app could also become non static.</p>
+<p>This effort is now tracked using a &quot;Focus Group&quot; (temporary wording) project: https://github.com/orgs/quarkiverse/projects/6</p>
+<p>This is a great opportunity to participate in fun effort and be involved with the Quarkus community, if anyone is interested in being a part of this, please reach out to me 🚀</p>
+</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="card wg-card  ms-1 me-1 mb-1 mt-1">
+                    <div class="card-header text-start">
+                        <span>WebSocket Next</span>
+                        <span class="badge float-end text-bg-success">on track</span>
+                    </div>
+                    <div class="card-body text-start">
+                        <p class="card-text"><span class="key">Description:</span><span class="short-description">WebSocket-Next related tasks</span></p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-sm btn-secondary me-1 mb-1 float-start" data-bs-toggle="modal" data-bs-target="#modal-PVT_kwDOAtbo_84Ai3qo">More info</a>
+                        <span class="float-center text-center last-update-date">Last activity: 04/07/2024</span>
+                        <a href="https://github.com/orgs/quarkusio/projects/26" class="btn btn-sm btn-primary me-1 mb-1 float-end">Board</a>
+                    </div>
+
+                    <!-- The modal given more details -->
+                    <div class="modal fade" id="modal-PVT_kwDOAtbo_84Ai3qo" tabindex="-1" aria-labelledby="modal-PVT_kwDOAtbo_84Ai3qo-label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="modal-PVT_kwDOAtbo_84Ai3qo-label">WebSocket Next</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-start">
+                                    <p><p>The WebSocket Next <em>focus group</em> aims to improve our WebSocket experience.</p>
+<p>Recently, we delivered a new approach to dealing with WebSocket (both for the server and client). This was the first step. There are still a few areas to improve, such as documentation, security, observability, and testability. The goal of this focus group is to track these efforts.</p>
+<p>Point of contact: @mkouba (@<strong>Martin Kouba</strong>  on Zulip)</p>
+</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+    </div>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>

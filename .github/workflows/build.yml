@@ -17,7 +17,6 @@ on:
       - main
     paths-ignore:
       - '**/*.md'
-      - '.github/**'
 
 defaults:
   run:

@@ -70,7 +70,10 @@ public class main implements Callable<Integer> {
 
         Log.infof("Found %d working group projects", boards.size());
         boards.sort(Comparator.comparing(Board::updateDate).reversed());
-        Files.writeString(new File("working-group.html").toPath(), template.data("boards", boards).render());
+
+        File target = new File("target");
+        target.mkdirs();
+        Files.writeString(new File(target, "index.html").toPath(), template.data("boards", boards).render());
 
         return 0;
     }

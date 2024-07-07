@@ -35,7 +35,6 @@ jobs:
         with:
           java-version: ${{ env.JVM_VERSION }}
           distribution: temurin
-          cache: maven
       - name: Install JBang
         run: curl -Ls https://sh.jbang.dev | bash -s - app setup
 

@@ -34,12 +34,13 @@ jobs:
         with:
           java-version: ${{ env.JVM_VERSION }}
           distribution: temurin
-      - name: Install JBang
-        run: curl -Ls https://sh.jbang.dev | bash -s - app setup
 
-      - name: Generate
-        run: jbang src/main.java
+      - name: jbang
+        uses: jbangdev/jbang-action@v0.116.0
+        with:
+          script: src/main.java
         env:
+          JBANG_REPO: /root/.jbang/repository
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Deploy

@@ -35,7 +35,7 @@ jobs:
           distribution: temurin
 
       - name: jbang
-        uses: jbangdev/jbang-action@v0.116.0
+        uses: jbangdev/jbang-action@v0.115.0
         with:
           script: src/main.java
         env:

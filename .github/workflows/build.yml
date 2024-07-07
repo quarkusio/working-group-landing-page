@@ -40,7 +40,7 @@ jobs:
           script: src/main.java
         env:
           JBANG_REPO: /root/.jbang/repository
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4

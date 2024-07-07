@@ -114,7 +114,6 @@ public class main implements Callable<Integer> {
 
         JsonArray array = response.getData().getJsonObject("organization").getJsonObject("projectsV2")
                 .getJsonArray("nodes");
-        System.out.println(array);
         for (JsonValue value : array) {
             var json = value.asJsonObject();
             var t = json.getString("title");

@@ -46,10 +46,10 @@ public class main implements Callable<Integer> {
     @ConfigProperty(name = "github.token")
     String token;
 
-    @ConfigProperty(name = "working-groups.organizations", defaultValue = "quarkusio,quarkiverse")
+    @ConfigProperty(name = "working-groups.organizations")
     List<String> organizations;
 
-    @ConfigProperty(name = "working-groups.project-prefix", defaultValue = "WG -")
+    @ConfigProperty(name = "working-groups.project-prefix")
     String prefix;
 
     @GraphQLClient("github")
@@ -70,9 +70,7 @@ public class main implements Callable<Integer> {
 
         Log.infof("Found %d working group projects", boards.size());
         boards.sort(Comparator.comparing(Board::updateDate).reversed());
-        File target = new File("target");
-        target.mkdirs();
-        Files.writeString(new File(target, "working-group.html").toPath(), template.data("boards", boards).render());
+        Files.writeString(new File("working-group.html").toPath(), template.data("boards", boards).render());
 
         return 0;
     }

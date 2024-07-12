@@ -31,6 +31,7 @@ import org.commonmark.renderer.html.HtmlRenderer;
 import org.eclipse.microprofile.config.inject.ConfigProperty;
 
 import io.quarkus.logging.Log;
+import io.quarkus.qute.Location;
 import io.quarkus.qute.Template;
 import io.smallrye.graphql.client.GraphQLClient;
 import io.smallrye.graphql.client.Response;
@@ -46,17 +47,21 @@ public class main implements Callable<Integer> {
     @ConfigProperty(name = "github.token")
     String token;
 
-    @ConfigProperty(name = "working-groups.organizations")
+    @ConfigProperty(name = "working-groups.organizations", defaultValue = "quarkusio,quarkiverse")
     List<String> organizations;
 
-    @ConfigProperty(name = "working-groups.project-prefix")
+    @ConfigProperty(name = "working-groups.project-prefix", defaultValue = "WG -")
     String prefix;
 
     @GraphQLClient("github")
     DynamicGraphQLClient githubClient;
 
     @Inject
-    Template template;
+    Template page;
+
+    @Inject
+    @Location("array.yaml")
+    Template yaml;
 
     @Override
     public Integer call() throws Exception {
@@ -73,7 +78,9 @@ public class main implements Callable<Integer> {
 
         File target = new File("target");
         target.mkdirs();
-        Files.writeString(new File(target, "index.html").toPath(), template.data("boards", boards).render());
+
+        Files.writeString(new File(target, "index.html").toPath(), page.data("boards", boards).render());
+        Files.writeString(new File(target, "working-groups.yaml").toPath(), yaml.data("boards", boards).render());
 
         return 0;
     }
@@ -165,7 +172,7 @@ public class main implements Callable<Integer> {
             STALED
         }
 
-        public String getLastUpdateDate() {
+        public String getLastActivityDate() {
             LocalDateTime dateTime = LocalDateTime.ofInstant(updateDate, ZoneId.of("UTC"));
 
             // Define the formatter
@@ -189,6 +196,11 @@ public class main implements Callable<Integer> {
             Node document = parser.parse(longDescription());
             HtmlRenderer renderer = HtmlRenderer.builder().build();
             return renderer.render(document);
+        }
+
+        public String getIndentedReadme() {
+            String readme = getReadme();
+            return readme.replaceAll("\n", "\n        ").trim();
         }
 
         public Status getStatus() {

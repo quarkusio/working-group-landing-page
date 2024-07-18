@@ -1,5 +1,25 @@
 ---
 working-groups:
+    - title: "WebSocket Next"
+      short-description: WebSocket-Next related tasks
+      readme: |
+        <p>The WebSocket Next <em>focus group</em> aims to improve our WebSocket experience.</p>
+        <p>Recently, we delivered a new approach to dealing with WebSocket (both for the server and client). This was the first step. There are still a few areas to improve, such as documentation, security, observability, and testability. The goal of this focus group is to track these efforts.</p>
+        <p>Point of contact: @mkouba (@<strong>Martin Kouba</strong>  on Zulip)</p>
+      status: on track
+      last-activity: 18/07/2024
+    - title: "Quarkus 3.15 LTS"
+      short-description: This WG focuses on defining the issues we would like to have in the next-to-be LTS (Quarkus 3.14/3.15)
+      readme: |
+        <p>This working group uses a different board:</p>
+        <ul>
+        <li>The <code>under discussion</code> column contains the issues we would like to have in the next LTS but are still under consideration.</li>
+        <li>The <code>out of scope</code> column contains the issues under discussion' that won't be included. The reason can be time or technical...</li>
+        <li>The <code>in progress</code> means that the work has started and should be completed before the TLS cut date</li>
+        <li>The <code>done</code> column means that the issues have been completed</li>
+        </ul>
+      status: at risk
+      last-activity: 18/07/2024
     - title: "Test classloading"
       short-description: The goal of this working group is to rewrite Quarkus's test classloading, so that tests are run in the same classloader as the application under tests, and Quarkus extensions can do "Quarkus-y" manipulations of test classes.
       readme: |
@@ -12,26 +32,6 @@ working-groups:
         <p>The goal of this working group is to allow test classes to fully participate in the 'quarkification' of classes. The mechanism for this is probably just to load the test classes with the classloader we intend to run them with, so that JUnit sees the 'correct' version of the class.</p>
       status: inactive
       last-activity: 17/07/2024
-    - title: "Quarkus 3.15 LTS"
-      short-description: This WG focuses on defining the issues we would like to have in the next-to-be LTS (Quarkus 3.14/3.15)
-      readme: |
-        <p>This working group uses a different board:</p>
-        <ul>
-        <li>The <code>under discussion</code> column contains the issues we would like to have in the next LTS but are still under consideration.</li>
-        <li>The <code>out of scope</code> column contains the issues under discussion' that won't be included. The reason can be time or technical...</li>
-        <li>The <code>in progress</code> means that the work has started and should be completed before the TLS cut date</li>
-        <li>The <code>done</code> column means that the issues have been completed</li>
-        </ul>
-      status: at risk
-      last-activity: 17/07/2024
-    - title: "WebSocket Next"
-      short-description: WebSocket-Next related tasks
-      readme: |
-        <p>The WebSocket Next <em>focus group</em> aims to improve our WebSocket experience.</p>
-        <p>Recently, we delivered a new approach to dealing with WebSocket (both for the server and client). This was the first step. There are still a few areas to improve, such as documentation, security, observability, and testability. The goal of this focus group is to track these efforts.</p>
-        <p>Point of contact: @mkouba (@<strong>Martin Kouba</strong>  on Zulip)</p>
-      status: on track
-      last-activity: 16/07/2024
     - title: "Enhanced TLS support"
       short-description: Track the progress around the new TLS configuration centralization and new features (like Let's Encrypt, Cert-Manager, and local experience...)
       readme: |

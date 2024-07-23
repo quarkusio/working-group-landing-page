@@ -8,7 +8,7 @@ working-groups:
         <p>The goal of this focus group is to continue integrating the TLS registry and improve Quarkus integration with certificate providers (Let's Encrypt, Cert-Manager). In addition, we would like to provide a frictionless local experience around TLS (i.e., without the infamous untrusted certificate screen).</p>
         <p><em>Point of contact:</em> @cescoffier (@<strong>Clement Escoffier</strong> on Zulip)</p>
       status: on track
-      last-activity: 22/07/2024
+      last-activity: 23/07/2024
       last-update: We just got an end-to-end let's encrypt demo working!
     - title: "Quarkus 3.15 LTS"
       short-description: This WG focuses on defining the issues we would like to have in the next-to-be LTS (Quarkus 3.14/3.15)

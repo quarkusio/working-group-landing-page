@@ -1,5 +1,17 @@
 ---
 working-groups:
+    - title: "Quarkus 3.15 LTS"
+      short-description: This WG focuses on defining the issues we would like to have in the next-to-be LTS (Quarkus 3.14/3.15)
+      readme: |
+        <p>This working group uses a different board:</p>
+        <ul>
+        <li>The <code>under discussion</code> column contains the issues we would like to have in the next LTS but are still under consideration.</li>
+        <li>The <code>out of scope</code> column contains the issues under discussion' that won't be included. The reason can be time or technical...</li>
+        <li>The <code>in progress</code> means that the work has started and should be completed before the TLS cut date</li>
+        <li>The <code>done</code> column means that the issues have been completed</li>
+        </ul>
+      status: at risk
+      last-activity: 05/08/2024
     - title: "Docker file generation"
       short-description: A working group focusing on the generation of Dockerfile / ContainerFile
       readme: |
@@ -49,18 +61,6 @@ working-groups:
       status: on track
       last-activity: 01/08/2024
       last-update: Good progress so far.
-    - title: "Quarkus 3.15 LTS"
-      short-description: This WG focuses on defining the issues we would like to have in the next-to-be LTS (Quarkus 3.14/3.15)
-      readme: |
-        <p>This working group uses a different board:</p>
-        <ul>
-        <li>The <code>under discussion</code> column contains the issues we would like to have in the next LTS but are still under consideration.</li>
-        <li>The <code>out of scope</code> column contains the issues under discussion' that won't be included. The reason can be time or technical...</li>
-        <li>The <code>in progress</code> means that the work has started and should be completed before the TLS cut date</li>
-        <li>The <code>done</code> column means that the issues have been completed</li>
-        </ul>
-      status: at risk
-      last-activity: 26/07/2024
     - title: "Enhanced TLS support"
       short-description: Track the progress around the new TLS configuration centralization and new features (like Let's Encrypt, Cert-Manager, and local experience...)
       readme: |

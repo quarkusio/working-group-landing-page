@@ -1,5 +1,21 @@
 ---
 working-groups:
+    - title: "Docker file generation"
+      short-description: A working group focusing on the generation of Dockerfile / ContainerFile
+      readme: |
+        <p>At the moment, when you create a Quarkus project (from code.quarkus.io or the CLI), a set of <code>Dockerfiles</code> is generated. However,</p>
+        <ol>
+        <li>Not all these files are used by the user</li>
+        <li>These files are very quickly outdated</li>
+        <li>It does not allow <em>extensions</em> to customize the content</li>
+        </ol>
+        <p>This working group aims to replace these `Dockerfiles' with a CLI command that generates an up-to-date Dockerfile and includes extension customization.</p>
+        <p>The goal is not to allow updating these files once generated but to provide a one-off generation that the user can consult and use. It will use the recommended and up-to-date <code>FROM</code> image to improve security and, depending on the generated <em>variant</em> (JVM, native, native-micro...), follow good practices (such as using <code>run-java</code> for the JVM one).</p>
+        <p>You can find more details about this working group on <a href="https://github.com/quarkusio/quarkus/discussions/41352">this discussion</a>.
+        Once completed, this working group will be followed by other initiatives focusing on generating the Github Action and Tekton pipelines.</p>
+        <p><em>Point of contact</em>: @iocanel (<code>Ioannis Canellos</code>on Zulip)</p>
+      status: on track
+      last-activity: 05/08/2024
     - title: "Test classloading"
       short-description: The goal of this working group is to rewrite Quarkus's test classloading, so that tests are run in the same classloader as the application under tests, and Quarkus extensions can do "Quarkus-y" manipulations of test classes.
       readme: |
@@ -63,19 +79,3 @@ working-groups:
         <p>Point of contact: @mkouba (@<strong>Martin Kouba</strong>  on Zulip)</p>
       status: staled
       last-activity: 24/07/2024
-    - title: "Docker file generation"
-      short-description: A working group focusing on the generation of Dockerfile / ContainerFile
-      readme: |
-        <p>At the moment, when you create a Quarkus project (from code.quarkus.io or the CLI), a set of <code>Dockerfiles</code> is generated. However,</p>
-        <ol>
-        <li>Not all these files are used by the user</li>
-        <li>These files are very quickly outdated</li>
-        <li>It does not allow <em>extensions</em> to customize the content</li>
-        </ol>
-        <p>This working group aims to replace these `Dockerfiles' with a CLI command that generates an up-to-date Dockerfile and includes extension customization.</p>
-        <p>The goal is not to allow updating these files once generated but to provide a one-off generation that the user can consult and use. It will use the recommended and up-to-date <code>FROM</code> image to improve security and, depending on the generated <em>variant</em> (JVM, native, native-micro...), follow good practices (such as using <code>run-java</code> for the JVM one).</p>
-        <p>You can find more details about this working group on <a href="https://github.com/quarkusio/quarkus/discussions/41352">this discussion</a>.
-        Once completed, this working group will be followed by other initiatives focusing on generating the Github Action and Tekton pipelines.</p>
-        <p><em>Point of contact</em>: @iocanel (<code>Ioannis Canellos</code>on Zulip)</p>
-      status: on track
-      last-activity: 09/07/2024

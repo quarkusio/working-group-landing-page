@@ -61,7 +61,7 @@ working-groups:
         <p>The WebSocket Next <em>focus group</em> aims to improve our WebSocket experience.</p>
         <p>Recently, we delivered a new approach to dealing with WebSocket (both for the server and client). This was the first step. There are still a few areas to improve, such as documentation, security, observability, and testability. The goal of this focus group is to track these efforts.</p>
         <p>Point of contact: @mkouba (@<strong>Martin Kouba</strong>  on Zulip)</p>
-      status: on track
+      status: staled
       last-activity: 24/07/2024
     - title: "Docker file generation"
       short-description: A working group focusing on the generation of Dockerfile / ContainerFile

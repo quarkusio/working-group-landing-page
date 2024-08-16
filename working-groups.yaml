@@ -11,7 +11,7 @@ working-groups:
         <li>The <code>done</code> column means that the issues have been completed</li>
         </ul>
       status: at risk
-      last-activity: 13/08/2024
+      last-activity: 16/08/2024
     - title: "Docker file generation"
       short-description: A working group focusing on the generation of Dockerfile / ContainerFile
       readme: |

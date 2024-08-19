@@ -110,6 +110,88 @@
             <div class="col">
                 <div class="card wg-card  ms-1 me-1 mb-1 mt-1">
                     <div class="card-header text-start">
+                        <span>Quarkus 3.15 LTS</span>
+                        <span class="badge float-end text-bg-warning">at risk</span>
+                    </div>
+                    <div class="card-body text-start">
+                        <p class="card-text"><span class="key">Description:</span><span class="short-description">This WG focuses on defining the issues we would like to have in the next-to-be LTS (Quarkus 3.14/3.15)</span></p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-sm btn-secondary me-1 mb-1 float-start" data-bs-toggle="modal" data-bs-target="#modal-PVT_kwDOAtbo_84AkfFV">More info</a>
+                        <span class="float-center text-center last-update-date">Last activity: 19/08/2024</span>
+                        <a href="https://github.com/orgs/quarkusio/projects/28" class="btn btn-sm btn-primary me-1 mb-1 float-end">Board</a>
+                    </div>
+
+                    <!-- The modal given more details -->
+                    <div class="modal fade" id="modal-PVT_kwDOAtbo_84AkfFV" tabindex="-1" aria-labelledby="modal-PVT_kwDOAtbo_84AkfFV-label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="modal-PVT_kwDOAtbo_84AkfFV-label">Quarkus 3.15 LTS</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-start">
+                                    <p><p>This working group uses a different board:</p>
+<ul>
+<li>The <code>under discussion</code> column contains the issues we would like to have in the next LTS but are still under consideration.</li>
+<li>The <code>out of scope</code> column contains the issues under discussion' that won't be included. The reason can be time or technical...</li>
+<li>The <code>in progress</code> means that the work has started and should be completed before the TLS cut date</li>
+<li>The <code>done</code> column means that the issues have been completed</li>
+</ul>
+</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="card wg-card  ms-1 me-1 mb-1 mt-1">
+                    <div class="card-header text-start">
+                        <span>Enhanced TLS support</span>
+                        <span class="badge float-end text-bg-success">on track</span>
+                    </div>
+                    <div class="card-body text-start">
+                        <p class="card-text"><span class="key">Description:</span><span class="short-description">Track the progress around the new TLS configuration centralization and new features (like Let&#39;s Encrypt, Cert-Manager, and local experience...)</span></p>
+                        <p class="card-text"><span class="key">Last status update:</span><span class="last-update">We just got an end-to-end let&#39;s encrypt demo working!</span></p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-sm btn-secondary me-1 mb-1 float-start" data-bs-toggle="modal" data-bs-target="#modal-PVT_kwDOAtbo_84Ai3FA">More info</a>
+                        <span class="float-center text-center last-update-date">Last activity: 19/08/2024</span>
+                        <a href="https://github.com/orgs/quarkusio/projects/24" class="btn btn-sm btn-primary me-1 mb-1 float-end">Board</a>
+                    </div>
+
+                    <!-- The modal given more details -->
+                    <div class="modal fade" id="modal-PVT_kwDOAtbo_84Ai3FA" tabindex="-1" aria-labelledby="modal-PVT_kwDOAtbo_84Ai3FA-label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="modal-PVT_kwDOAtbo_84Ai3FA-label">Enhanced TLS support</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-start">
+                                    <p><p>TLS is becoming increasingly common and recommended. However, for years, each Quarkus extension has been doing its own TLS configuration and management. As a result, the configuration looks different everywhere, and many extensions have incomplete configurations.</p>
+<p>Based on the newly integrated TLS registry, we now have a single place to configure TLS. At runtime, it provides methods to configure Vert.x and &quot;pure&quot; Java clients (using an <code>SSLContext</code>).</p>
+<p>The goal of this focus group is to continue integrating the TLS registry and improve Quarkus integration with certificate providers (Let's Encrypt, Cert-Manager). In addition, we would like to provide a frictionless local experience around TLS (i.e., without the infamous untrusted certificate screen).</p>
+<p><em>Point of contact:</em> @cescoffier (@<strong>Clement Escoffier</strong> on Zulip)</p>
+</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="card wg-card  ms-1 me-1 mb-1 mt-1">
+                    <div class="card-header text-start">
                         <span>Test classloading</span>
                         <span class="badge float-end text-bg-success">on track</span>
                     </div>
@@ -203,48 +285,6 @@
             <div class="col">
                 <div class="card wg-card  ms-1 me-1 mb-1 mt-1">
                     <div class="card-header text-start">
-                        <span>Quarkus 3.15 LTS</span>
-                        <span class="badge float-end text-bg-warning">at risk</span>
-                    </div>
-                    <div class="card-body text-start">
-                        <p class="card-text"><span class="key">Description:</span><span class="short-description">This WG focuses on defining the issues we would like to have in the next-to-be LTS (Quarkus 3.14/3.15)</span></p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="#" class="btn btn-sm btn-secondary me-1 mb-1 float-start" data-bs-toggle="modal" data-bs-target="#modal-PVT_kwDOAtbo_84AkfFV">More info</a>
-                        <span class="float-center text-center last-update-date">Last activity: 16/08/2024</span>
-                        <a href="https://github.com/orgs/quarkusio/projects/28" class="btn btn-sm btn-primary me-1 mb-1 float-end">Board</a>
-                    </div>
-
-                    <!-- The modal given more details -->
-                    <div class="modal fade" id="modal-PVT_kwDOAtbo_84AkfFV" tabindex="-1" aria-labelledby="modal-PVT_kwDOAtbo_84AkfFV-label" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="modal-PVT_kwDOAtbo_84AkfFV-label">Quarkus 3.15 LTS</h1>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body text-start">
-                                    <p><p>This working group uses a different board:</p>
-<ul>
-<li>The <code>under discussion</code> column contains the issues we would like to have in the next LTS but are still under consideration.</li>
-<li>The <code>out of scope</code> column contains the issues under discussion' that won't be included. The reason can be time or technical...</li>
-<li>The <code>in progress</code> means that the work has started and should be completed before the TLS cut date</li>
-<li>The <code>done</code> column means that the issues have been completed</li>
-</ul>
-</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="col">
-                <div class="card wg-card  ms-1 me-1 mb-1 mt-1">
-                    <div class="card-header text-start">
                         <span>Docker file generation</span>
                         <span class="badge float-end text-bg-success">on track</span>
                     </div>
@@ -277,46 +317,6 @@
 <p>You can find more details about this working group on <a href="https://github.com/quarkusio/quarkus/discussions/41352">this discussion</a>.
 Once completed, this working group will be followed by other initiatives focusing on generating the Github Action and Tekton pipelines.</p>
 <p><em>Point of contact</em>: @iocanel (<code>Ioannis Canellos</code>on Zulip)</p>
-</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="col">
-                <div class="card wg-card  ms-1 me-1 mb-1 mt-1">
-                    <div class="card-header text-start">
-                        <span>Enhanced TLS support</span>
-                        <span class="badge float-end text-bg-success">on track</span>
-                    </div>
-                    <div class="card-body text-start">
-                        <p class="card-text"><span class="key">Description:</span><span class="short-description">Track the progress around the new TLS configuration centralization and new features (like Let&#39;s Encrypt, Cert-Manager, and local experience...)</span></p>
-                        <p class="card-text"><span class="key">Last status update:</span><span class="last-update">We just got an end-to-end let&#39;s encrypt demo working!</span></p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="#" class="btn btn-sm btn-secondary me-1 mb-1 float-start" data-bs-toggle="modal" data-bs-target="#modal-PVT_kwDOAtbo_84Ai3FA">More info</a>
-                        <span class="float-center text-center last-update-date">Last activity: 26/07/2024</span>
-                        <a href="https://github.com/orgs/quarkusio/projects/24" class="btn btn-sm btn-primary me-1 mb-1 float-end">Board</a>
-                    </div>
-
-                    <!-- The modal given more details -->
-                    <div class="modal fade" id="modal-PVT_kwDOAtbo_84Ai3FA" tabindex="-1" aria-labelledby="modal-PVT_kwDOAtbo_84Ai3FA-label" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="modal-PVT_kwDOAtbo_84Ai3FA-label">Enhanced TLS support</h1>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body text-start">
-                                    <p><p>TLS is becoming increasingly common and recommended. However, for years, each Quarkus extension has been doing its own TLS configuration and management. As a result, the configuration looks different everywhere, and many extensions have incomplete configurations.</p>
-<p>Based on the newly integrated TLS registry, we now have a single place to configure TLS. At runtime, it provides methods to configure Vert.x and &quot;pure&quot; Java clients (using an <code>SSLContext</code>).</p>
-<p>The goal of this focus group is to continue integrating the TLS registry and improve Quarkus integration with certificate providers (Let's Encrypt, Cert-Manager). In addition, we would like to provide a frictionless local experience around TLS (i.e., without the infamous untrusted certificate screen).</p>
-<p><em>Point of contact:</em> @cescoffier (@<strong>Clement Escoffier</strong> on Zulip)</p>
 </p>
                                 </div>
                                 <div class="modal-footer">

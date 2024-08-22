@@ -5,7 +5,7 @@ working-groups:
       readme: |
         <p>Let's define a format for the files containing the config model we will include in the jars for IDE consumption.</p>
         <p>See https://github.com/quarkusio/quarkus/discussions/42671 for more details.</p>
-      status: inactive
+      status: on track
       last-activity: 21/08/2024
     - title: "Quarkus 3.15 LTS"
       short-description: This WG focuses on defining the issues we would like to have in the next-to-be LTS (Quarkus 3.14/3.15)

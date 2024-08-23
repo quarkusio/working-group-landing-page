@@ -7,7 +7,7 @@ working-groups:
         <p>See https://github.com/quarkusio/quarkus/discussions/42671 for more details.</p>
         <p><em>Point of contact</em>: @gsmet (Zulip: @_<strong>Guillaume Smet</strong> )</p>
       status: on track
-      last-activity: 22/08/2024
+      last-activity: 23/08/2024
     - title: "Quarkus 3.15 LTS"
       short-description: This WG focuses on defining the issues we would like to have in the next-to-be LTS (Quarkus 3.14/3.15)
       readme: |

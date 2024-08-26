@@ -1,13 +1,5 @@
 ---
 working-groups:
-    - title: "Quarkus Config and IDEs"
-      short-description: Let's define a format for the files containing the config model we will include in the jars for IDE consumption.
-      readme: |
-        <p>Let's define a format for the files containing the config model we will include in the jars for IDE consumption.</p>
-        <p>See https://github.com/quarkusio/quarkus/discussions/42671 for more details.</p>
-        <p><em>Point of contact</em>: @gsmet (Zulip: @_<strong>Guillaume Smet</strong> )</p>
-      status: on track
-      last-activity: 23/08/2024
     - title: "Quarkus 3.15 LTS"
       short-description: This WG focuses on defining the issues we would like to have in the next-to-be LTS (Quarkus 3.14/3.15)
       readme: |
@@ -19,7 +11,15 @@ working-groups:
         <li>The <code>done</code> column means that the issues have been completed</li>
         </ul>
       status: at risk
-      last-activity: 21/08/2024
+      last-activity: 26/08/2024
+    - title: "Quarkus Config and IDEs"
+      short-description: Let's define a format for the files containing the config model we will include in the jars for IDE consumption.
+      readme: |
+        <p>Let's define a format for the files containing the config model we will include in the jars for IDE consumption.</p>
+        <p>See https://github.com/quarkusio/quarkus/discussions/42671 for more details.</p>
+        <p><em>Point of contact</em>: @gsmet (Zulip: @_<strong>Guillaume Smet</strong> )</p>
+      status: on track
+      last-activity: 23/08/2024
     - title: "Enhanced TLS support"
       short-description: Track the progress around the new TLS configuration centralization and new features (like Let's Encrypt, Cert-Manager, and local experience...)
       readme: |

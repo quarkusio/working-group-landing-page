@@ -1,5 +1,13 @@
 ---
 working-groups:
+    - title: "WebSocket Next"
+      short-description: WebSocket-Next related tasks
+      readme: |
+        <p>The WebSocket Next <em>focus group</em> aims to improve our WebSocket experience.</p>
+        <p>Recently, we delivered a new approach to dealing with WebSocket (both for the server and client). This was the first step. There are still a few areas to improve, such as documentation, security, observability, and testability. The goal of this focus group is to track these efforts.</p>
+        <p>Point of contact: @mkouba (@<strong>Martin Kouba</strong>  on Zulip)</p>
+      status: staled
+      last-activity: 29/08/2024
     - title: "Roq :: Quarkus SSG"
       short-description: Allow Static Site Generation with Quarkus.
       readme: |
@@ -44,14 +52,6 @@ working-groups:
         <li>The <code>done</code> column means that the issues have been completed</li>
         </ul>
       status: at risk
-      last-activity: 28/08/2024
-    - title: "WebSocket Next"
-      short-description: WebSocket-Next related tasks
-      readme: |
-        <p>The WebSocket Next <em>focus group</em> aims to improve our WebSocket experience.</p>
-        <p>Recently, we delivered a new approach to dealing with WebSocket (both for the server and client). This was the first step. There are still a few areas to improve, such as documentation, security, observability, and testability. The goal of this focus group is to track these efforts.</p>
-        <p>Point of contact: @mkouba (@<strong>Martin Kouba</strong>  on Zulip)</p>
-      status: staled
       last-activity: 28/08/2024
     - title: "Quarkus Config and IDEs"
       short-description: Let's define a format for the files containing the config model we will include in the jars for IDE consumption.

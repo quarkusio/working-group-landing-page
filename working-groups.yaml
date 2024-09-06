@@ -11,7 +11,7 @@ working-groups:
         <li>The <code>done</code> column means that the issues have been completed</li>
         </ul>
       status: at risk
-      last-activity: 05/09/2024
+      last-activity: 06/09/2024
       last-update: Work is progressing. Still items that will need to be cleaned. Thus still at risk but managable.
     - title: "WebSocket Next"
       short-description: WebSocket-Next related tasks

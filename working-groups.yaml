@@ -1,5 +1,13 @@
 ---
 working-groups:
+    - title: "Quarkus Config and IDEs"
+      short-description: Let's define a format for the files containing the config model we will include in the jars for IDE consumption.
+      readme: |
+        <p>Let's define a format for the files containing the config model we will include in the jars for IDE consumption.</p>
+        <p>See https://github.com/quarkusio/quarkus/discussions/42671 for more details.</p>
+        <p><em>Point of contact</em>: @gsmet (Zulip: @_<strong>Guillaume Smet</strong> )</p>
+      status: on track
+      last-activity: 13/09/2024
     - title: "Quarkus 3.15 LTS"
       short-description: This WG focuses on defining the issues we would like to have in the next-to-be LTS (Quarkus 3.14/3.15)
       readme: |
@@ -80,14 +88,6 @@ For 1.0 we need pagination, tags and SEO.
         Once completed, this working group will be followed by other initiatives focusing on generating the Github Action and Tekton pipelines.</p>
         <p><em>Point of contact</em>: @iocanel (<code>Ioannis Canellos</code>on Zulip)</p>
       status: staled
-      last-activity: 10/09/2024
-    - title: "Quarkus Config and IDEs"
-      short-description: Let's define a format for the files containing the config model we will include in the jars for IDE consumption.
-      readme: |
-        <p>Let's define a format for the files containing the config model we will include in the jars for IDE consumption.</p>
-        <p>See https://github.com/quarkusio/quarkus/discussions/42671 for more details.</p>
-        <p><em>Point of contact</em>: @gsmet (Zulip: @_<strong>Guillaume Smet</strong> )</p>
-      status: on track
       last-activity: 10/09/2024
     - title: "Moving Quarkus to the CommonHaus Foundation"
       short-description: Work needed around moving Quarkus to foundation and streamline open governance.

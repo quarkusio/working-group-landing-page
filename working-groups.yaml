@@ -11,7 +11,7 @@ working-groups:
         <li>The <code>done</code> column means that the issues have been completed</li>
         </ul>
       status: at risk
-      last-activity: 13/09/2024
+      last-activity: 14/09/2024
       last-update: Work is progressing. Still items that will need to be cleaned. Thus still at risk but managable.
     - title: "Enhanced TLS support"
       short-description: Track the progress around the new TLS configuration centralization and new features (like Let's Encrypt, Cert-Manager, and local experience...)

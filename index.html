@@ -110,6 +110,49 @@
             <div class="col">
                 <div class="card wg-card  ms-1 me-1 mb-1 mt-1">
                     <div class="card-header text-start">
+                        <span>Quarkus 3.15 LTS</span>
+                        <span class="badge float-end text-bg-warning">at risk</span>
+                    </div>
+                    <div class="card-body text-start">
+                        <p class="card-text"><span class="key">Description:</span><span class="short-description">This WG focuses on defining the issues we would like to have in the next-to-be LTS (Quarkus 3.14/3.15)</span></p>
+                        <p class="card-text"><span class="key">Last status update:</span><span class="last-update">Work is progressing. Still items that will need to be cleaned. Thus still at risk but managable.</span></p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-sm btn-secondary me-1 mb-1 float-start" data-bs-toggle="modal" data-bs-target="#modal-PVT_kwDOAtbo_84AkfFV">More info</a>
+                        <span class="float-center text-center last-update-date">Last activity: 17/09/2024</span>
+                        <a href="https://github.com/orgs/quarkusio/projects/28" class="btn btn-sm btn-primary me-1 mb-1 float-end">Board</a>
+                    </div>
+
+                    <!-- The modal given more details -->
+                    <div class="modal fade" id="modal-PVT_kwDOAtbo_84AkfFV" tabindex="-1" aria-labelledby="modal-PVT_kwDOAtbo_84AkfFV-label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="modal-PVT_kwDOAtbo_84AkfFV-label">Quarkus 3.15 LTS</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-start">
+                                    <p><p>This working group uses a different board:</p>
+<ul>
+<li>The <code>under discussion</code> column contains the issues we would like to have in the next LTS but are still under consideration.</li>
+<li>The <code>out of scope</code> column contains the issues under discussion' that won't be included. The reason can be time or technical...</li>
+<li>The <code>in progress</code> means that the work has started and should be completed before the TLS cut date</li>
+<li>The <code>done</code> column means that the issues have been completed</li>
+</ul>
+</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="card wg-card  ms-1 me-1 mb-1 mt-1">
+                    <div class="card-header text-start">
                         <span>Test classloading</span>
                         <span class="badge float-end text-bg-success">on track</span>
                     </div>
@@ -141,49 +184,6 @@ This is a big change, and one which doesn&#39;t lend itself well to dividing int
 </blockquote>
 <p>A final benefit is a reduction in the internal complexity of our code. Hopping between classloaders during test execution takes a lot of work, and adds a lot of code! It also is brittle in places. For example, because the hop between classloaders relies on serialization in some cases, it's becoming harder to do as the JVM tightens up security restrictions. We used to rely on xstream, but that stopped working in Java 17. In https://github.com/quarkusio/quarkus/pull/40601, @dmlloyd moved us to use the JBoss Serializer, which works better, but might still be affected by future restrictions on class access.</p>
 <p>The goal of this working group is to allow test classes to fully participate in the 'quarkification' of classes. The mechanism for this is probably just to load the test classes with the classloader we intend to run them with, so that JUnit sees the 'correct' version of the class.</p>
-</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="col">
-                <div class="card wg-card  ms-1 me-1 mb-1 mt-1">
-                    <div class="card-header text-start">
-                        <span>Quarkus 3.15 LTS</span>
-                        <span class="badge float-end text-bg-warning">at risk</span>
-                    </div>
-                    <div class="card-body text-start">
-                        <p class="card-text"><span class="key">Description:</span><span class="short-description">This WG focuses on defining the issues we would like to have in the next-to-be LTS (Quarkus 3.14/3.15)</span></p>
-                        <p class="card-text"><span class="key">Last status update:</span><span class="last-update">Work is progressing. Still items that will need to be cleaned. Thus still at risk but managable.</span></p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="#" class="btn btn-sm btn-secondary me-1 mb-1 float-start" data-bs-toggle="modal" data-bs-target="#modal-PVT_kwDOAtbo_84AkfFV">More info</a>
-                        <span class="float-center text-center last-update-date">Last activity: 16/09/2024</span>
-                        <a href="https://github.com/orgs/quarkusio/projects/28" class="btn btn-sm btn-primary me-1 mb-1 float-end">Board</a>
-                    </div>
-
-                    <!-- The modal given more details -->
-                    <div class="modal fade" id="modal-PVT_kwDOAtbo_84AkfFV" tabindex="-1" aria-labelledby="modal-PVT_kwDOAtbo_84AkfFV-label" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="modal-PVT_kwDOAtbo_84AkfFV-label">Quarkus 3.15 LTS</h1>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body text-start">
-                                    <p><p>This working group uses a different board:</p>
-<ul>
-<li>The <code>under discussion</code> column contains the issues we would like to have in the next LTS but are still under consideration.</li>
-<li>The <code>out of scope</code> column contains the issues under discussion' that won't be included. The reason can be time or technical...</li>
-<li>The <code>in progress</code> means that the work has started and should be completed before the TLS cut date</li>
-<li>The <code>done</code> column means that the issues have been completed</li>
-</ul>
 </p>
                                 </div>
                                 <div class="modal-footer">

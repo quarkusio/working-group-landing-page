@@ -110,6 +110,108 @@
             <div class="col">
                 <div class="card wg-card  ms-1 me-1 mb-1 mt-1">
                     <div class="card-header text-start">
+                        <span>Enhanced TLS support</span>
+                        <span class="badge float-end text-bg-info">complete</span>
+                    </div>
+                    <div class="card-body text-start">
+                        <p class="card-text"><span class="key">Description:</span><span class="short-description">Track the progress around the new TLS configuration centralization and new features (like Let&#39;s Encrypt, Cert-Manager, and local experience...)</span></p>
+                        <p class="card-text"><span class="key">Last status update:</span><span class="last-update">This working group is complete! 
+That does not mean that no work will be done around TLS, but what was defined in the initial scope of the working group has been completed. 
+Enhancements and bug fixes will follow. </span></p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-sm btn-secondary me-1 mb-1 float-start" data-bs-toggle="modal" data-bs-target="#modal-PVT_kwDOAtbo_84Ai3FA">More info</a>
+                        <span class="float-center text-center last-update-date">Last activity: 29/09/2024</span>
+                        <a href="https://github.com/orgs/quarkusio/projects/24" class="btn btn-sm btn-primary me-1 mb-1 float-end">Board</a>
+                    </div>
+
+                    <!-- The modal given more details -->
+                    <div class="modal fade" id="modal-PVT_kwDOAtbo_84Ai3FA" tabindex="-1" aria-labelledby="modal-PVT_kwDOAtbo_84Ai3FA-label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="modal-PVT_kwDOAtbo_84Ai3FA-label">Enhanced TLS support</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-start">
+                                    <p><p>TLS is becoming increasingly common and recommended. However, for years, each Quarkus extension has been doing its own TLS configuration and management. As a result, the configuration looks different everywhere, and many extensions have incomplete configurations.</p>
+<p>Based on the newly integrated TLS registry, we now have a single place to configure TLS. At runtime, it provides methods to configure Vert.x and &quot;pure&quot; Java clients (using an <code>SSLContext</code>).</p>
+<p>The goal of this focus group is to continue integrating the TLS registry and improve Quarkus integration with certificate providers (Let's Encrypt, Cert-Manager). In addition, we would like to provide a frictionless local experience around TLS (i.e., without the infamous untrusted certificate screen).</p>
+<p><em>Point of contact:</em> @cescoffier (@<strong>Clement Escoffier</strong> on Zulip)</p>
+</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="card wg-card  ms-1 me-1 mb-1 mt-1">
+                    <div class="card-header text-start">
+                        <span>Quarkus to the CommonHaus Foundation</span>
+                        <span class="badge float-end text-bg-success">on track</span>
+                    </div>
+                    <div class="card-body text-start">
+                        <p class="card-text"><span class="key">Description:</span><span class="short-description">Work needed around moving Quarkus to foundation and streamline open governance.</span></p>
+                        <p class="card-text"><span class="key">Last status update:</span><span class="last-update">Just got started.</span></p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-sm btn-secondary me-1 mb-1 float-start" data-bs-toggle="modal" data-bs-target="#modal-PVT_kwDOAtbo_84AnuAc">More info</a>
+                        <span class="float-center text-center last-update-date">Last activity: 29/09/2024</span>
+                        <a href="https://github.com/orgs/quarkusio/projects/38" class="btn btn-sm btn-primary me-1 mb-1 float-end">Board</a>
+                    </div>
+
+                    <!-- The modal given more details -->
+                    <div class="modal fade" id="modal-PVT_kwDOAtbo_84AnuAc" tabindex="-1" aria-labelledby="modal-PVT_kwDOAtbo_84AnuAc-label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="modal-PVT_kwDOAtbo_84AnuAc-label">Quarkus to the CommonHaus Foundation</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-start">
+                                    <p><p>from Discussion at https://github.com/quarkusio/quarkus/discussions/43013</p>
+<p>We started the move of Quarkus to a foundation <a href="https://quarkus.io/blog/quarkus-in-a-foundation/">earlier this year</a> and recently <a href="https://quarkus.io/blog/quarkus-moving-to-commonhaus/">set the direction</a> towards <a href="https://www.commonhaus.org/">CommonHaus</a> and during the summer break the CommonHaus council <a href="https://github.com/commonhaus/foundation/pull/183">approved our request</a> to join.</p>
+<p>Thus, now the real work starts, and it's just fitting we set up a working group for the effort getting Quarkus to CommonHaus foundation.</p>
+<h1>Goal</h1>
+<p>Two parts</p>
+<ul>
+<li>setup Quarkus to have transparent and open governance</li>
+<li>Go through the few but important requirements for a CommonHaus project.</li>
+</ul>
+<h1>Initial work items/questions:</h1>
+<p>Current known list, but not limited to:</p>
+<ul>
+<li>identify design communication channels (i.e. #41973)</li>
+<li>which repositories / code will move</li>
+<li>impact (if any) on quarkiverse projects</li>
+<li>how will trademarks work/change</li>
+<li>identify running services and setup/maintain them (registry.quarkus.io, code.quarkus.io etc.)</li>
+<li>add required metadata/files to the various repositories</li>
+</ul>
+<h1>Tracking</h1>
+<p>We will use the working group board to track publicly all the known relevant work and questions.For the few exception cases where, for legal or personal constraints, the work must happen in private, we will post the outcome and results in public places (like a GitHub discussion of a GitHub issue tracked on the working group board).</p>
+<h1>When will this working group be done?</h1>
+<p>When Quarkus has an active working governance model in place and all major work items around setting up Quarkus at CommonHaus are completed - after that, its expected things will just be iteratively improved, and the dedicated working group will not be needed (others might start to continue more specific efforts).</p>
+<p>The majority of the work must be done before the end of December 2024. The latest deadline for CommonHaus is April 2025, when the bootstrap period of CommonHaus ends.</p>
+</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="card wg-card  ms-1 me-1 mb-1 mt-1">
+                    <div class="card-header text-start">
                         <span>Quarkus 3.15 LTS</span>
                         <span class="badge float-end text-bg-success">on track</span>
                     </div>
@@ -281,106 +383,6 @@ For 1.0 we need pagination, tags and SEO.
 <p>Bonus, everything added will benefit any &quot;non-static&quot; Quarkus app and any Static Quarkus app could also become non static.</p>
 <p>This effort is now tracked using a &quot;Working Group&quot; project: https://github.com/orgs/quarkiverse/projects/6</p>
 <p>This is a great opportunity to participate in fun effort and be involved with the Quarkus community, if anyone is interested in being a part of this, please reach out to me 🚀</p>
-</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="col">
-                <div class="card wg-card  ms-1 me-1 mb-1 mt-1">
-                    <div class="card-header text-start">
-                        <span>Moving Quarkus to the CommonHaus Foundation</span>
-                        <span class="badge float-end text-bg-success">on track</span>
-                    </div>
-                    <div class="card-body text-start">
-                        <p class="card-text"><span class="key">Description:</span><span class="short-description">Work needed around moving Quarkus to foundation and streamline open governance.</span></p>
-                        <p class="card-text"><span class="key">Last status update:</span><span class="last-update">Just got started.</span></p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="#" class="btn btn-sm btn-secondary me-1 mb-1 float-start" data-bs-toggle="modal" data-bs-target="#modal-PVT_kwDOAtbo_84AnuAc">More info</a>
-                        <span class="float-center text-center last-update-date">Last activity: 20/09/2024</span>
-                        <a href="https://github.com/orgs/quarkusio/projects/38" class="btn btn-sm btn-primary me-1 mb-1 float-end">Board</a>
-                    </div>
-
-                    <!-- The modal given more details -->
-                    <div class="modal fade" id="modal-PVT_kwDOAtbo_84AnuAc" tabindex="-1" aria-labelledby="modal-PVT_kwDOAtbo_84AnuAc-label" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="modal-PVT_kwDOAtbo_84AnuAc-label">Moving Quarkus to the CommonHaus Foundation</h1>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body text-start">
-                                    <p><p>from Discussion at https://github.com/quarkusio/quarkus/discussions/43013</p>
-<p>We started the move of Quarkus to a foundation <a href="https://quarkus.io/blog/quarkus-in-a-foundation/">earlier this year</a> and recently <a href="https://quarkus.io/blog/quarkus-moving-to-commonhaus/">set the direction</a> towards <a href="https://www.commonhaus.org/">CommonHaus</a> and during the summer break the CommonHaus council <a href="https://github.com/commonhaus/foundation/pull/183">approved our request</a> to join.</p>
-<p>Thus, now the real work starts, and it's just fitting we set up a working group for the effort getting Quarkus to CommonHaus foundation.</p>
-<h1>Goal</h1>
-<p>Two parts</p>
-<ul>
-<li>setup Quarkus to have transparent and open governance</li>
-<li>Go through the few but important requirements for a CommonHaus project.</li>
-</ul>
-<h1>Initial work items/questions:</h1>
-<p>Current known list, but not limited to:</p>
-<ul>
-<li>identify design communication channels (i.e. #41973)</li>
-<li>which repositories / code will move</li>
-<li>impact (if any) on quarkiverse projects</li>
-<li>how will trademarks work/change</li>
-<li>identify running services and setup/maintain them (registry.quarkus.io, code.quarkus.io etc.)</li>
-<li>add required metadata/files to the various repositories</li>
-</ul>
-<h1>Tracking</h1>
-<p>We will use the working group board to track publicly all the known relevant work and questions.For the few exception cases where, for legal or personal constraints, the work must happen in private, we will post the outcome and results in public places (like a GitHub discussion of a GitHub issue tracked on the working group board).</p>
-<h1>When will this working group be done?</h1>
-<p>When Quarkus has an active working governance model in place and all major work items around setting up Quarkus at CommonHaus are completed - after that, its expected things will just be iteratively improved, and the dedicated working group will not be needed (others might start to continue more specific efforts).</p>
-<p>The majority of the work must be done before the end of December 2024. The latest deadline for CommonHaus is April 2025, when the bootstrap period of CommonHaus ends.</p>
-</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="col">
-                <div class="card wg-card  ms-1 me-1 mb-1 mt-1">
-                    <div class="card-header text-start">
-                        <span>Enhanced TLS support</span>
-                        <span class="badge float-end text-bg-success">on track</span>
-                    </div>
-                    <div class="card-body text-start">
-                        <p class="card-text"><span class="key">Description:</span><span class="short-description">Track the progress around the new TLS configuration centralization and new features (like Let&#39;s Encrypt, Cert-Manager, and local experience...)</span></p>
-                        <p class="card-text"><span class="key">Last status update:</span><span class="last-update">Approaching completion. Watch [Quarkus Insight #177](https://www.youtube.com/watch?v=VP7c9ftFwrQ&amp;list=PLsM3ZE5tGAVatO65JIxgskQh-OKoqM4F2&amp;index=1) to see various demo going from configuration, local TLS, certificate reloading and ACME integration.</span></p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="#" class="btn btn-sm btn-secondary me-1 mb-1 float-start" data-bs-toggle="modal" data-bs-target="#modal-PVT_kwDOAtbo_84Ai3FA">More info</a>
-                        <span class="float-center text-center last-update-date">Last activity: 13/09/2024</span>
-                        <a href="https://github.com/orgs/quarkusio/projects/24" class="btn btn-sm btn-primary me-1 mb-1 float-end">Board</a>
-                    </div>
-
-                    <!-- The modal given more details -->
-                    <div class="modal fade" id="modal-PVT_kwDOAtbo_84Ai3FA" tabindex="-1" aria-labelledby="modal-PVT_kwDOAtbo_84Ai3FA-label" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="modal-PVT_kwDOAtbo_84Ai3FA-label">Enhanced TLS support</h1>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body text-start">
-                                    <p><p>TLS is becoming increasingly common and recommended. However, for years, each Quarkus extension has been doing its own TLS configuration and management. As a result, the configuration looks different everywhere, and many extensions have incomplete configurations.</p>
-<p>Based on the newly integrated TLS registry, we now have a single place to configure TLS. At runtime, it provides methods to configure Vert.x and &quot;pure&quot; Java clients (using an <code>SSLContext</code>).</p>
-<p>The goal of this focus group is to continue integrating the TLS registry and improve Quarkus integration with certificate providers (Let's Encrypt, Cert-Manager). In addition, we would like to provide a frictionless local experience around TLS (i.e., without the infamous untrusted certificate screen).</p>
-<p><em>Point of contact:</em> @cescoffier (@<strong>Clement Escoffier</strong> on Zulip)</p>
 </p>
                                 </div>
                                 <div class="modal-footer">

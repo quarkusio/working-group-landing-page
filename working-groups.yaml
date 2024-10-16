@@ -1,5 +1,19 @@
 ---
 working-groups:
+    - title: "Quarkus 3.15 LTS"
+      short-description: This WG focuses on defining the issues we would like to have in the next-to-be LTS (Quarkus 3.14/3.15)
+      readme: |
+        <p>This working group uses a different board:</p>
+        <ul>
+        <li>The <code>under discussion</code> column contains the issues we would like to have in the next LTS but are still under consideration.</li>
+        <li>The <code>out of scope</code> column contains the issues under discussion' that won't be included. The reason can be time or technical...</li>
+        <li>The <code>in progress</code> means that the work has started and should be completed before the TLS cut date</li>
+        <li>The <code>done</code> column means that the issues have been completed</li>
+        </ul>
+      status: on track
+      last-activity: 16/10/2024
+      last-update: 3.15 has been cut. 
+The 3.15.x is the new LTS, starting with 3.15.1
     - title: "Roq :: Quarkus SSG"
       short-description: Allow Static Site Generation with Quarkus.
       readme: |
@@ -81,20 +95,6 @@ At the moment one can configure:
 
 With more features to be added in future pull requests.
 The pull request is on hold due to some concerns raised by @ia3andy. A meeting has been scheduled to discuss those concerns.
-    - title: "Quarkus 3.15 LTS"
-      short-description: This WG focuses on defining the issues we would like to have in the next-to-be LTS (Quarkus 3.14/3.15)
-      readme: |
-        <p>This working group uses a different board:</p>
-        <ul>
-        <li>The <code>under discussion</code> column contains the issues we would like to have in the next LTS but are still under consideration.</li>
-        <li>The <code>out of scope</code> column contains the issues under discussion' that won't be included. The reason can be time or technical...</li>
-        <li>The <code>in progress</code> means that the work has started and should be completed before the TLS cut date</li>
-        <li>The <code>done</code> column means that the issues have been completed</li>
-        </ul>
-      status: on track
-      last-activity: 01/10/2024
-      last-update: 3.15 has been cut. 
-The 3.15.x is the new LTS, starting with 3.15.1
     - title: "Enhanced TLS support"
       short-description: Track the progress around the new TLS configuration centralization and new features (like Let's Encrypt, Cert-Manager, and local experience...)
       readme: |
